@@ -1,1 +1,3 @@
 # Dino_1.5
+
+###I made dino more “beautiful”, although with a small bug...
