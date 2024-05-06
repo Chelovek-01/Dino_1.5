@@ -1,0 +1,218 @@
+div.start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+svg {
+    color: rgb(114, 172, 152);
+}
+
+div.start-container button {
+    outline: none;
+    border: 2px #ccc solid;
+    border-radius: 20px;
+    background: aliceblue;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #111;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+#dino {
+    width: 65px;
+    height: 45px;
+    background-image: url(./images/dino.png);
+    background-size: 65px 45px;
+    position: absolute;
+    top: 125px;
+}
+
+.jump {
+    animation: dinoJump 0.4s linear;
+}
+
+.jumpStopped {
+    animation-play-state: paused;
+}
+
+@keyframes dinoJump {
+    0% {
+        top: 125px;
+    }
+    5% {
+        top: 115px;
+    }
+    10% {
+        top: 105px;
+    }
+    15% {
+        top: 95px;
+    }
+    20% {
+        top: 85px;
+    }
+    25% {
+        top: 75px;
+    }
+    30% {
+        top: 65px;
+    }
+    35% {
+        top: 55px;
+    }
+    40% {
+        top: 45px;
+    }
+    45% {
+        top: 35px;
+    }
+    50% {
+        top: 30px;
+    }
+    55% {
+        top: 35px;
+    }
+    60% {
+        top: 45px;
+    }
+    65% {
+        top: 55px;
+    }
+    70% {
+        top: 65px;
+    }
+    75% {
+        top: 75px;
+    }
+    80% {
+        top: 85px;
+    }
+    85% {
+        top: 95px;
+    }
+    90% {
+        top: 105px;
+    }
+    95% {
+        top: 115px;
+    }
+    100% {
+        top: 125px;
+    }
+}
+
+#cactus {
+    width: 50px;
+    height: 40px;
+    background-image: url(./images/cactus.svg);
+    background-size: 50px 40px;
+    position: absolute;
+    top: 133px;
+    left: 570px;
+}
+
+.cactusAnimated {
+    animation: cactusMove 1s infinite linear;
+}
+
+.cactusPaused {
+    animation-play-state: paused;
+}
+
+@keyframes cactusMove {
+    0% {
+        left: 570px;
+    }
+    25% {
+        left: 415px;
+    }
+    50% {
+        left: 260px;
+    }
+    75% {
+        left: 110px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+#sun {
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    width: 80px;
+    height: 60px;
+    background-image: url(./images/sun.svg);
+    background-size: 80px 60px;
+    z-index: 1;
+}
+
+#cloud {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background-image: url(./images/cloud.svg);
+    background-size: 39px 39px;
+    top: 45px;
+    left: 600px;
+    overflow: hidden;
+    object-fit: contain;
+    background-size: cover;
+    z-index: 2;
+}
+
+hr {
+    position: absolute;
+    top: 170px;
+    margin: auto;
+    border: none;
+    background-color: #ccc;
+    height: 1px;
+    width: 600px;
+}
+
+.timer {
+    position: absolute;
+    top: 27px;
+    left: 460px;
+    font-weight: bold;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.end {
+    padding: 15px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: rgb(137, 193, 241);
+    position: relative;
+    z-index: 10;
+}
+
+.end button {
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
